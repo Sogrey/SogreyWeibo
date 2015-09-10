@@ -27,6 +27,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <!-- 以下为sina的sdk -->
         <!-- 必须注册在微博授权，分享微博时候用到 -->
         <activity
             android:name="com.sina.weibo.sdk.component.WeiboSdkBrowser"

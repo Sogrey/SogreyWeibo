@@ -26,6 +26,7 @@ import android.os.Environment;
 import android.os.Looper;
 import android.util.Log;
 
+import com.sogrey.sinaweibo.global.AppConfig;
 import com.sogrey.sinaweibo.global.AppConstans;
 import com.sogrey.sinaweibo.ui.base.ActivityManager;
 import com.sogrey.sinaweibo.utils.FileUtil;
@@ -178,7 +179,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 		String result = writer.toString();
 		sb.append(result);
 		try {
-			String fileName = AppConstans.getLogName();
+			String fileName = AppConfig.getLogName();
 			if (Environment.getExternalStorageState().equals(
 					Environment.MEDIA_MOUNTED)) {
 				String path = FileUtil.getLogDir(mContext);

@@ -10,6 +10,7 @@ import com.sogrey.sinaweibo.views.SwipeBackLayout;
 /**
  * 想要实现向右滑动删除Activity效果只需要继承SwipeBackActivity即可，如果当前页面含有ViewPager
  * 只需要调用SwipeBackLayout的addViewPager()方法即可
+ * 
  * @author Sogrey
  * @date 2015-9-10 下午3:46:57
  */

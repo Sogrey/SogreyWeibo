@@ -1,0 +1,14 @@
+eclipse.preferences.version=1
+encoding//src/com/sogrey/sinaweibo/global/AppConfig.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/global/AppException.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/AbImageUtil.java=utf-8
+encoding//src/com/sogrey/sinaweibo/utils/AppUtil.java=utf-8
+encoding//src/com/sogrey/sinaweibo/utils/FileUtil.java=utf-8
+encoding//src/com/sogrey/sinaweibo/utils/LogUtil.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/MD5.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/MathUtil.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/StrUtil.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/ToastUtil.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/http/FormFile.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/http/HttpRespons.java=UTF-8
+encoding//src/com/sogrey/sinaweibo/utils/http/HttpUtils.java=UTF-8

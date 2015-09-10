@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.sogrey.sinaweibo.MainActivity" >
+
+    <!--
+         <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="50dp"
+        android:background="@color/s_dark_red"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textColor="@color/s_white"
+        android:clickable="true"
+        android:onClick="Method_Login"
+        android:textSize="@dimen/com_sina_weibo_sdk_loginview_text_size"
+        android:text="@string/login" />
+    -->
+    <TextView
+        android:id="@+id/txt_token"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text=""
+        android:textColor="@color/s_gray"
+        android:textSize="@dimen/frontsize_supersmall" />
+    <!-- 默认效果，带图片文字的登陆按钮 -->
+
+    <com.sina.weibo.sdk.widget.LoginButton
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="50dp"
+        android:gravity="center"
+         />
+
+    <TextView
+        android:id="@+id/txt_version_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="v1.0"
+        android:textColor="@color/s_gray"
+        android:textSize="@dimen/frontsize_supersmall" />
+
+</RelativeLayout>

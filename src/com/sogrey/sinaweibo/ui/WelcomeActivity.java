@@ -4,18 +4,20 @@
  */
 package com.sogrey.sinaweibo.ui;
 
-import com.sogrey.sinaweibo.ui.base.BaseActivity;
+import android.view.KeyEvent;
+
+import com.sogrey.sinaweibo.R;
+import com.sogrey.sinaweibo.ui.base.SwipeBackActivity;
 
 /**
  * @author Sogrey
  * @date 2015-9-9 下午4:30:35
  */
-public class WelcomeActivity extends BaseActivity {
+public class WelcomeActivity extends SwipeBackActivity {
 
 	@Override
 	public int setLayout_1() {
-		// TODO Auto-generated method stub
-		return 0;
+		return R.layout.activity_login;
 	}
 
 	@Override
@@ -29,8 +31,12 @@ public class WelcomeActivity extends BaseActivity {
 		// TODO Auto-generated method stub
 		
 	}
-	/**
-	 * @author Sogrey
-	 * @date 2015-9-9  下午4:30:36
-	 */
+
+	@Override
+	public boolean onKeyDown(int keyCode, KeyEvent event) {
+		if (keyCode==KeyEvent.KEYCODE_BACK) {
+			WelcomeActivity.this.finish();
+		}
+		return true;
+	}
 }

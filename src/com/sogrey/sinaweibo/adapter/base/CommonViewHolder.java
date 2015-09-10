@@ -4,6 +4,8 @@
  */
 package com.sogrey.sinaweibo.adapter.base;
 
+import com.nostra13.universalimageloader.core.ImageLoader;
+
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -355,11 +357,11 @@ public class CommonViewHolder {
 	 *            the url of resource to set
 	 * @return CommonViewHolder
 	 */
-//	public CommonViewHolder setImg_ImageView(int viewId, String url) {
-//		ImageLoader.getInstance()
-//				.displayImage(url, (ImageView) getView(viewId));
-//		return this;
-//	}
+	public CommonViewHolder setImg_ImageView(int viewId, String url) {
+		ImageLoader.getInstance()
+				.displayImage(url, (ImageView) getView(viewId));
+		return this;
+	}
 
 	/**
 	 * 设置CheckBox选中与否

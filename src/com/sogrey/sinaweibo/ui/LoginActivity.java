@@ -78,6 +78,15 @@ public class LoginActivity extends BaseActivity {
 		 * {@link #onActivityResult} 函数中进行区分。 通常情况下，我们的应用不需要调用该函数。
 		 */
 		mBtnLogin.setExternalOnClickListener(mButtonClickListener);
+		//XXX
+		mTxtVersion.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent(LoginActivity.this,WelcomeActivity.class);
+				LoginActivity.this.startActivity(intent);
+			}
+		});
 	}
 
 	@Override

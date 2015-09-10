@@ -18,6 +18,8 @@ import com.sogrey.sinaweibo.R;
 import com.sogrey.sinaweibo.views.DialogUtils;
 
 /**
+ * Activity基类
+ * 
  * @author Sogrey
  * @date 2015-9-9 下午4:27:26
  */
@@ -59,7 +61,7 @@ public abstract class BaseActivity extends Activity {
 	 * @author Sogrey
 	 * @date 2015年5月19日
 	 */
-	public  void init_2() {
+	public void init_2() {
 	}
 
 	/**
@@ -76,7 +78,7 @@ public abstract class BaseActivity extends Activity {
 	 * @author Sogrey
 	 * @date 2015年5月19日
 	 */
-	public  void setListener_4() {
+	public void setListener_4() {
 	}
 
 	/**
@@ -87,7 +89,11 @@ public abstract class BaseActivity extends Activity {
 	 */
 	public abstract void initDatas_5();
 
-	// 退出提示;
+	/**
+	 * 退出提示框
+	 * @author Sogrey
+	 * @date  2015-9-10  下午3:20:13
+	 */
 	public void showExitDialog() {
 		if (mDailogUtils != null && mDailogUtils.isShowing()) {
 			mDailogUtils.dismiss();
@@ -97,8 +103,8 @@ public abstract class BaseActivity extends Activity {
 
 				@Override
 				public void ok() {
-					exit();
 					toCancle();
+					exit();
 				}
 
 				@Override
@@ -108,12 +114,12 @@ public abstract class BaseActivity extends Activity {
 			};
 			mDailogUtils.show();
 			TextView tv = new TextView(this);
-			tv.setText("确定退出程序？");
+			tv.setText(getResources().getString(R.string.hint_logout_msg));
 			tv.setGravity(Gravity.CENTER);
 			mDailogUtils.setContent(tv);
-			mDailogUtils.setDialogTitle("退出");
-			mDailogUtils.setDialogCancleBtn("取消");
-			mDailogUtils.setDialogOkBtn("确定");
+			mDailogUtils.setDialogTitle(getResources().getString(R.string.hint_logout_title));
+			mDailogUtils.setDialogCancleBtn(getResources().getString(R.string.cancle));
+			mDailogUtils.setDialogOkBtn(getResources().getString(R.string.ok));
 			mDailogUtils.setDialogCancleBtnColor(getResources().getColor(
 					R.color.s_dark_green));
 			mDailogUtils.setDialogOkBtnColor(getResources().getColor(

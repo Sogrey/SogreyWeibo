@@ -30,6 +30,7 @@ import com.sogrey.sinaweibo.global.AppConfig;
 import com.sogrey.sinaweibo.global.AppConstans;
 import com.sogrey.sinaweibo.ui.base.ActivityManager;
 import com.sogrey.sinaweibo.utils.FileUtil;
+import com.sogrey.sinaweibo.utils.ToastUtil;
 
 /**
  * 处理未捕获的异常，保存到文件
@@ -107,9 +108,7 @@ public class CrashHandler implements UncaughtExceptionHandler {
 			@Override
 			public void run() {
 				Looper.prepare();
-				// Toast.makeText(mContext,
-				// mContext.getString(R.string.hint_app_err),
-				// Toast.LENGTH_LONG).show();
+				ToastUtil.showToastBottom(mContext, AppConfig.NULL_MESSAGE_EXCEPTION);
 				Looper.loop();
 			}
 		}.start();

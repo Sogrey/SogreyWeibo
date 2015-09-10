@@ -111,7 +111,6 @@ public abstract class DialogUtils extends Dialog {
 			@Override
 			public void onClick(View v) {
 				cancle();
-				toCancle();
 			}
 		});
 		mBtnOk.setOnClickListener(new View.OnClickListener() {
@@ -119,7 +118,6 @@ public abstract class DialogUtils extends Dialog {
 			@Override
 			public void onClick(View v) {
 				ok();
-				toCancle();
 			}
 		});
 	}

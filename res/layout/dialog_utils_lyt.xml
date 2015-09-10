@@ -58,7 +58,7 @@
             android:text="放弃"
             android:textColor="@color/s_black" />
 
-        <VIew
+        <View
             android:id="@+id/view_dialog_cancle"
             android:layout_width="1dp"
             android:layout_height="fill_parent"

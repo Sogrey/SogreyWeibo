@@ -108,21 +108,23 @@ public final class R {
         public static final int shadow_left=0x7f02001c;
     }
     public static final class id {
-        public static final int btn_dialog_cancle=0x7f090007;
-        public static final int btn_dialog_ok=0x7f090009;
+        public static final int btn_dialog_cancle=0x7f090008;
+        public static final int btn_dialog_ok=0x7f09000a;
         public static final int btn_login=0x7f090001;
-        public static final int layout=0x7f090003;
-        public static final int lyt_dialog_content=0x7f090006;
-        public static final int lyt_dialog_title_line=0x7f090005;
-        public static final int txt_dialog_title=0x7f090004;
+        public static final int layout=0x7f090004;
+        public static final int lyt_dialog_content=0x7f090007;
+        public static final int lyt_dialog_title_line=0x7f090006;
+        public static final int txt_dialog_title=0x7f090005;
+        public static final int txt_test=0x7f090003;
         public static final int txt_token=0x7f090000;
         public static final int txt_version_name=0x7f090002;
-        public static final int view_dialog_cancle=0x7f090008;
+        public static final int view_dialog_cancle=0x7f090009;
     }
     public static final class layout {
         public static final int activity_login=0x7f030000;
-        public static final int dialog_utils_lyt=0x7f030001;
-        public static final int swipe_back_base_layout=0x7f030002;
+        public static final int activity_welcome=0x7f030001;
+        public static final int dialog_utils_lyt=0x7f030002;
+        public static final int swipe_back_base_layout=0x7f030003;
     }
     public static final class string {
         public static final int action_settings=0x7f060005;

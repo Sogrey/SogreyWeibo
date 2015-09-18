@@ -17,6 +17,7 @@ public class AppConstans {
 	public static final String LOG_NAME = "yyyy-MM-dd_HH-mm-ss";
 	/** 当前 DEMO 应用的 APP_KEY，第三方应用应该使用自己的 APP_KEY 替换该 APP_KEY */
 	public static final String APP_KEY = "1695932331";
+	public static final String APP_SECRET = "33a67ca51702f4804782026f27ebf828";
 
 	/**
 	 * 当前 DEMO 应用的回调页，第三方应用可以使用自己的回调页。
@@ -26,8 +27,8 @@ public class AppConstans {
 	 * 建议使用默认回调页：https://api.weibo.com/oauth2/default.html
 	 * </p>
 	 */
-	// public static final String REDIRECT_URL = "http://www.sina.com";
-	public static final String REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
+	 public static final String REDIRECT_URL = "https://api.weibo.com/oauth2/default.html";
+//	public static final String REDIRECT_URL = "http://open.weibo.com/apps/"+APP_KEY+"/privilege/oauth";
 
 	/**
 	 * Scope 是 OAuth2.0 授权机制中 authorize 接口的一个参数。通过 Scope，平台将开放更多的微博
